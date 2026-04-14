@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Jharkhand Tourism Explorer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Jharkhand Tourism Explorer</h1>
+    </header>
+
+    <div class="container">
+        <div class="filter-buttons">
+            <button onclick="filterCategory('All')">All</button>
+            <button onclick="filterCategory('Nature')">Nature</button>
+            <button onclick="filterCategory('Historical')">Historical</button>
+            <button onclick="filterCategory('Religious')">Religious</button>
+            <button onclick="filterCategory('Adventure')">Adventure</button>
+        </div>
+
+        <div class="cards"></div>
+        <div class="places">
+            <h2>Travel Places Suggestion</h2>
+            <p>Day 1: Visit Ranchi (Hundru Falls & Rock Garden)</p>
+            <p>Day 2: Explore Netarhat (Sunrise & Sunset Point)</p>
+            <p>Day 3: Visit Baidyanath Dham, Deoghar</p>
+            <p>Day 4: Betla National Park</p>
+            <P>Day 5: Visit Parasnath Hill</P>
+        </div>
+
+    </div>
+
+    <div class="modal" id="detailsModal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">X</span>
+            <h2 id="modalTitle"></h2>
+            <p id="modalDescription"></p>
+            <p><strong>Location:</strong> <span id="modalLocation"></span></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
